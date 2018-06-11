@@ -20,21 +20,18 @@
 
     <script type="text/babel">
         
-        class Hello extends React.Component{
+        class Checkbox extends React.Component{
             render(){
-                return (
+                return(
                     <div>
-                        <h1>Hello {this.props.firstName}</h1>
-                        <p>learning React Version {this.props.version}</p>
+                        <input type ='checkbox' />
                     </div>
                 )
             }
         }
-
-        const   HelloStateless = ({firstName}) => <h1>Hello {firstName}</h1>
         ReactDOM.render(
-            <HelloStateless firstName = 'Yvon' version={16}/>,
-            document.getElementById('react-container')
+           <Checkbox />,
+            document.getElementById('react-container' )
 
         )
 
