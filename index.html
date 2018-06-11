@@ -31,7 +31,7 @@
             }
         }
 
-        const   HelloStateless = () => <h1>Hello</h1>
+        const   HelloStateless = (props) => <h1>Hello {props.firstName}</h1>
         ReactDOM.render(
             <HelloStateless firstName = 'Yvon' version={16}/>,
             document.getElementById('react-container')
