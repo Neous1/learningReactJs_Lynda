@@ -34,9 +34,16 @@
                 })
             }
             render(){
+                var msg
+                if (this.state.checked) {
+                    msg="checked"
+                }else {
+                    msg = "not checked"
+                }
                 return(
                     <div>
-                        <input type ='checkbox' />
+                        <input type ='checkbox' onChange={this.handleCheck}/>
+                        <p>this box is {msg}</p>
                     </div>
                 )
             }
